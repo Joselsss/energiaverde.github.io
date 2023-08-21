@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energía Verde</title>
+        <link rel="shortcut icon" href="./images/logo2.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/calcular.css">
+    </head>
+<body>
+    <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo">Energía Verde</h1>
+
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="./index.html" class="menu__link">Inicio</a>
+                </li>
+    
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link">Acerca de<img src="./images/arrow.svg" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="./secondindex.html" class="menu__link menu__link--inside">Energía</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="./elec.html" class="menu__link menu__link--inside">Electrodomésticos</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="./recomend.html" class="menu__link menu__link--inside">Recomendaciones</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item  menu__item--show">
+                    <a href="#" class="menu__link">Contacto<img src="./images/arrow.svg" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="./thirdindex.html" class="menu__link menu__link--inside">Gmail & Número</a>
+                    </ul>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Blog</a>
+                </li>
+    
+            </ul>
+        </section>
+
+      
+    </nav>
+
+    <section class="titulo">
+        <h1>¡Calcula tu consumo de energía!</h1>
+    </section>
+
+    <section>
+        <form class="form__lista">
+            Electrodoméstico:
+            <select class="lista" id="n1">
+                <option disabled selected>Selecione uno</option>
+                <optgroup label="Samsung">
+                    <option value="7.7">Refrigeradora Top Freezer RT35K5930S8 361L Plata</option>
+                    <option value="10">Refrigeradora No Frost Side By Side RS64T5B00B1/PE 638L Negro</option>
+                    <option value="5.4">Refrigeradora No Frost RL4363SBABS 432L Negro Inox</option>
+                    <option value="10">Refrigeradora Side By Side RS65R5681M9/PE 602L Inox</option>
+                    <option value="10">Refrigeradora Puerta Francesa FlexZone LRF71A9671SG 713L</option>
+                    <option value="2.4">Televisor Smart TV 50" QLED 4K QN50Q60CAGXPE (2023)</option>
+                    <option value="1.9">Televisor 43" UHD Smart TV 2021 UN43AU7090GXPE</option>
+                    <option value="20">Horno Microondas 23L AGE83X</option>
+                    <option value="25">Horno Microondas 32L MG32J5133AG/PE</option>
+                    <option value="13.3">Horno Microondas 22.4 Lt AMW831K</option>
+                    <option value="25">Horno microondas 31L AME1114TW</option>
+                    <option value="26.6">Lavaseca 12.5/7kg carga frontal WD12TP84DBX/PE</option>
+                    <option value="40">Lavadora AI Control 21 kg WF21T6500GV/PE</option>
+                    <option value="8.3">Lavadora Eco Inverter 13KG WA13T5260BV</option>
+                </optgroup>
+
+                <optgroup label="Panasonic">
+                    <option value="2.5">Licuadora Slow Juicer Mj-l700</option>
+                    <option value="7.5">Licuadora MX-151SG1WZC</option>
+                    <option value="12.4">Refrigeradora NR-BV361BPKE de 370L</option>
+                    <option value="16.2">Refrigeradora NR-BS90PV1BD de 527L</option>
+                    <option value="17.2">Refrigeradora NR-BT43PV1TD de 387L</option>
+                    <option value="12.6">Refrigeradora NR-BV320GKd de 277L</option>
+                    <option value="20">Plancha NI-M250TPZA</option>
+                    <option value="25">Plancha NI-M300TAZA</option>
+                    <option value="22.5">Microondas NN-DS59NBRPH</option>
+                    <option value="20">Microondas NN-SC649S</option>
+                    <option value="20">Microondas NN-ST965SRPH</option>
+                    <option value="8.3">Lavadora de 12 kg NA-F120</option>
+                    <option value="11.6">Lavadora de 19 kg NA-F190H7</option>
+                    <option value="10.45">Lavadora de 19 kg NA-FS19P7</option>
+                    <option value="11.6">Olla arrocera 2.2 libras SR-Y22FGJLZB</option>
+                    <option value="12.5">Olla arrocera SR-DF101</option>
+                    <option value="12.5">Olla arrocera SR-DF181</option>
+
+                </optgroup>
+
+                <optgroup label="Oster">
+                    <option value="7.5">Licuadora Xpert Series™BLST3BRP</option>
+                    <option value="18.3">Licuadora BLSTBPST</option>
+                    <option value="11.6">Licuadora Sistema de nutrición Oster® ActiFit™ BLSTAFB</option>
+                    <option value="16.6">Freidora de aire Oster® de 1.8L  CKSTAF18DDF</option>
+                    <option value="28.3">Freidora de aire Oster® de 6.8 L CKSTAF68T</option>
+                    <option value="13">Refrigeradora No Frost OS-PNFME21200BD Black Inox </option>
+                    <option value="16.3">Refrigeradora No Frost OS-PSBSME20SSEBDI Black Inox</option>
+                    <option value="11.6">Horno Microondas 10 L A 20 L Pogm3702</option>
+                    <option value="13.3">Horno Microondas Oster Poggm3902G</option>
+                    <option value="11.6">HORNO MICROONDAS POGME2701</option>
+                    <option value="11.6">Olla arrocera CKSTRC5731S</option>
+                    <option value="11.6">Olla arrocera CKSTRC1700B</option>
+                    <option value="11.6">Olla arrocera CKSTRC5730W</option>
+                    <option value="11.6">Olla arrocera CKSTRC8029T</option>
+                    <option value="11.6">Olla arrocera CKSTRC1700W</option>
+                </optgroup>
+
+                <optgroup label="Mabe">
+                    <option value="10">Refrigeradora Tp Rma305fwpt 292lt</option>
+                    <option value="10">Refrigeradora 420 Lt Top Freezer RMP942FLPG1 Grafito</option>
+                    <option value="35">Lavadora LMAP9020WGB Silver</option>
+                    <option value="40">Lavadora LMA72200WDBB1</option>
+                    <option value="12.5">Microondas HMM20PEE</option>
+                    <option value="11.6">Microondas HMM20PEG</option>
+                    <option value="14.1">Frigobar RMF04PV0</option>
+                    <option value="13.3">Frigobar RMF04PRB0</option>
+                    <option value="16.6">Plancha ES2435</option>
+                    <option value="21.6">Plancha DS3093</option>
+                    <option value="9.1">Licuadora BLSTKAGWRD</option>
+                    <option value="9.1">Licuadora BLSTKAGBPB</option>
+                    <option value="15">Olla arrocera RC15N</option>
+                    <option value="15.8">Olla arrocera RC18VE</option>
+                    <option value="16.6">Freidora AF2010D</option>
+                    <option value="13.3">Freidora AF1880</option>
+                </optgroup>
+
+                <optgroup label="IMACO">
+                    <option value="5">Batidora hm3025n</option>
+                    <option value="23.3">Freidora AF2714R</option>
+                    <option value="25">Freidora AF6015M</option>
+                    <option value="13.3">Freidora AF5514</option>
+                    <option value="14.1">Tostadora Refrigeradora MOD. IBT2085</option>
+                </optgroup>
+
+                <optgroup label="Holstein">
+                    <option value="6.6">Licuadora HH-09101067B</option>
+                    <option value="4.1">Licuadora HH-0914902B</option>
+                    <option value="25">Horno Eléctrico HH-0914902B</option>
+                    <option value="23.3">Freidora HH-09202006C Cobre</option>
+                    <option value="21.6">Freidora de aire 3.5L</option>
+                    <option value="12.5">Tostadora HH-09101025B</option>
+                    <option value="18.3">Plancha HH-09114001S</option>
+                    <option value="15">Olla arrocera HH-09171002R</option>
+                    <option value="15">Olla arrocera HH-09171008B</option>
+                    <option value="9.1">Waflera HH-09125016I</option>
+                </optgroup>
+            </select>
+        </form>
+    </section>
+
+        <div class="row">
+            <label class="form__label">Tiempo de uso en minutos:</label>
+            <div class="numero">
+                <input type="number" class="form__control" id="n2">
+            </div>
+        </div>
+
+        <div class="row__boton">
+            <div class="boton">
+                <button class="btn__success" id="sumar">Calcular</button>
+            </div>
+        </div>
+
+    <div class="row__respuesta">
+        <div class="alert__success" id="respuesta" role="alert">
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+        <secttion class="footer__container container">
+            <nav class="nav nav--footer">
+                <h1 class="footer__title">Energía Verde</h1>
+                <ul class="nav__link__footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./secondindex.html" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./thirdindex.html" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form"  action="https:formspree.io/f/mknkkrkj"
+            method="post">
+                <h2 class="footer__newsletter">Haznos saber quién eres!</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                    <input type="submit" value="Regístrate" class="footer__submit">
+                </div>
+            </form>
+        </secttion>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer_icons"><img src="./images/fb.svg" class="footer_img"></a>
+                <a href="#" class="footer_icons"><img src="./images/tw.svg" class="footer_img"></a>
+                <a href="#" class="footer_icons"><img src="./images/yt.svg" class="footer_img"></a>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
